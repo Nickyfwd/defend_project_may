@@ -63,7 +63,7 @@ def coin(message):
 @bot.message_handler(func=lambda message: message.text == "Бросить кубик")
 def roll_dice(message):
     dice_result = random.randint(1, 6)
-    bot.send_message(message.chat.id,f"🎲 Бросаю кубик мой сладкий... Выпало: {dice_result} {[dice_result-1]}")
+    bot.send_message(message.chat.id,f"🎲 Бросаю кубик мой сладкий... Выпало: {dice_result}")
 
 @bot.message_handler(func=lambda message: message.text == "Сгенерировать пароль")
 def password_generator(message):
